@@ -1,11 +1,12 @@
-import type { Metadata } from 'next';
-import './globals.css';
-import { Providers } from '@/components/Providers';
+import type { Metadata } from "next";
+import "./globals.css";
+import { Providers } from "@/components/Providers";
 
 export const metadata: Metadata = {
-  title: 'Nwakaego Uchenna Oputa | Virtual Assistant & Customer Service Professional',
+  title:
+    "Nwakaego Uchenna Oputa | Virtual Assistant & Customer Service Professional",
   description:
-    'Professional portfolio of Nwakaego Uchenna Oputa – Customer Service & Administrative Support Professional. Available for remote and hybrid opportunities.',
+    "Professional portfolio of Nwakaego Uchenna Oputa – Customer Service & Administrative Support Professional. Available for remote and hybrid opportunities.",
 };
 
 export default function RootLayout({

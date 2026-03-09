@@ -1,28 +1,38 @@
-'use client';
+"use client";
 
-import { MapPin, Headset, Calendar, Database, MessageSquare } from 'lucide-react';
-import { motion } from 'motion/react';
+import {
+  MapPin,
+  Headset,
+  Calendar,
+  Database,
+  MessageSquare,
+} from "lucide-react";
+import { motion } from "motion/react";
 
 const services = [
   {
     icon: Headset,
-    title: 'Customer Support',
-    description: 'Expert handling of customer inquiries, complaints, and satisfaction management.',
+    title: "Customer Support",
+    description:
+      "Expert handling of customer inquiries, complaints, and satisfaction management.",
   },
   {
     icon: Calendar,
-    title: 'Admin & Coordination',
-    description: 'Efficient scheduling, inbox management, and stakeholder coordination.',
+    title: "Admin & Coordination",
+    description:
+      "Efficient scheduling, inbox management, and stakeholder coordination.",
   },
   {
     icon: MessageSquare,
-    title: 'Appointment Setting',
-    description: 'Professional cold calling and appointment scheduling for business development.',
+    title: "Appointment Setting",
+    description:
+      "Professional cold calling and appointment scheduling for business development.",
   },
   {
     icon: Database,
-    title: 'Data Management',
-    description: 'Accurate data entry, processing, and quality control with high precision.',
+    title: "Data Management",
+    description:
+      "Accurate data entry, processing, and quality control with high precision.",
   },
 ];
 
@@ -37,7 +47,9 @@ export function About() {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text mb-4">About Me</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-text mb-4">
+            About Me
+          </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-accent to-accent-light mx-auto rounded-full" />
         </motion.div>
 
@@ -50,18 +62,19 @@ export function About() {
         >
           <div className="bg-surface rounded-2xl p-8 border border-border shadow-sm">
             <p className="text-text-muted leading-relaxed mb-6">
-              I am a dedicated Customer Service and Administrative Support Professional with extensive
-              experience in virtual assistance, customer relations, and operational coordination. My
-              expertise spans across multiple industries, delivering exceptional service quality and
-              maintaining high standards of accuracy and efficiency.
+              I am a dedicated Customer Service and Administrative Support
+              Professional with extensive experience in virtual assistance,
+              customer relations, and operational coordination. My expertise
+              spans across multiple industries, delivering exceptional service
+              quality and maintaining high standards of accuracy and efficiency.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-4 mb-6">
               {[
-                'Scheduling & inbox management',
-                'Customer complaint resolution',
-                'CRM & Microsoft Office expertise',
-                'Data accuracy & quality control',
+                "Scheduling & inbox management",
+                "Customer complaint resolution",
+                "CRM & Microsoft Office expertise",
+                "Data accuracy & quality control",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-3">
                   <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
@@ -93,8 +106,12 @@ export function About() {
                 <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-accent-bg mb-4 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="font-semibold text-text mb-2">{service.title}</h3>
-                <p className="text-sm text-text-muted leading-relaxed">{service.description}</p>
+                <h3 className="font-semibold text-text mb-2">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-text-muted leading-relaxed">
+                  {service.description}
+                </p>
               </div>
             </motion.div>
           ))}

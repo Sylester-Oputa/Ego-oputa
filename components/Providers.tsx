@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { Toaster } from 'sonner';
+import { Toaster } from "sonner";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -10,9 +10,9 @@ export function Providers({ children }: { children: React.ReactNode }) {
         position="top-right"
         toastOptions={{
           style: {
-            background: 'var(--surface)',
-            color: 'var(--text)',
-            border: '1px solid var(--border)',
+            background: "var(--surface)",
+            color: "var(--text)",
+            border: "1px solid var(--border)",
           },
         }}
       />

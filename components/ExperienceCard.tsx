@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Briefcase } from 'lucide-react';
+import { Calendar, MapPin, Briefcase } from "lucide-react";
 
 interface ExperienceCardProps {
   role: string;

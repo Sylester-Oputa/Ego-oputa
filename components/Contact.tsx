@@ -1,24 +1,26 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { motion } from 'motion/react';
-import { Mail, Phone, Send, MessageSquare } from 'lucide-react';
-import { toast } from 'sonner';
+import { useState } from "react";
+import { motion } from "motion/react";
+import { Mail, Phone, Send, MessageSquare } from "lucide-react";
+import { toast } from "sonner";
 
 export function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success('Message sent successfully! I will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
+    toast.success("Message sent successfully! I will get back to you soon.");
+    setFormData({ name: "", email: "", message: "" });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
@@ -37,8 +39,8 @@ export function Contact() {
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-accent to-accent-light mx-auto rounded-full mb-6" />
           <p className="text-text-muted max-w-2xl mx-auto">
-            Ready to elevate your business operations? Let&apos;s discuss how I can support your
-            administrative and customer service needs.
+            Ready to elevate your business operations? Let&apos;s discuss how I
+            can support your administrative and customer service needs.
           </p>
         </motion.div>
 

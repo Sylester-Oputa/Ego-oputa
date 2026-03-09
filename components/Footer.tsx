@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { Download, Mail, Linkedin, Twitter } from 'lucide-react';
+import { Download, Mail, Linkedin, Twitter } from "lucide-react";
 
 interface FooterProps {
   onDownloadCV: () => void;
@@ -13,16 +13,16 @@ export function Footer({ onDownloadCV }: FooterProps) {
       const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
     }
   };
 
   const quickLinks = [
-    { label: 'About', id: 'about' },
-    { label: 'Experience', id: 'experience' },
-    { label: 'Skills', id: 'skills' },
-    { label: 'Education', id: 'education' },
-    { label: 'Contact', id: 'contact' },
+    { label: "About", id: "about" },
+    { label: "Experience", id: "experience" },
+    { label: "Skills", id: "skills" },
+    { label: "Education", id: "education" },
+    { label: "Contact", id: "contact" },
   ];
 
   return (
@@ -40,8 +40,8 @@ export function Footer({ onDownloadCV }: FooterProps) {
               </div>
             </div>
             <p className="text-text-muted text-sm leading-relaxed">
-              Professional customer service and administrative support specialist committed to
-              delivering exceptional results.
+              Professional customer service and administrative support
+              specialist committed to delivering exceptional results.
             </p>
           </div>
 
@@ -84,7 +84,8 @@ export function Footer({ onDownloadCV }: FooterProps) {
 
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-text-muted text-sm">
-            &copy; {new Date().getFullYear()} Nwakaego Uchenna Oputa. All rights reserved.
+            &copy; {new Date().getFullYear()} Nwakaego Uchenna Oputa. All rights
+            reserved.
           </p>
           <div className="flex items-center gap-4">
             <a

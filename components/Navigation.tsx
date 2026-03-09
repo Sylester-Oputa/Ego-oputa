@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { Download, Menu, X } from 'lucide-react';
-import { useState, useEffect } from 'react';
-import { ThemeToggle } from './ThemeToggle';
+import { Download, Menu, X } from "lucide-react";
+import { useState, useEffect } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 interface NavigationProps {
   onDownloadCV: () => void;
@@ -16,8 +16,8 @@ export function Navigation({ onDownloadCV }: NavigationProps) {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const scrollToSection = (id: string) => {
@@ -26,17 +26,17 @@ export function Navigation({ onDownloadCV }: NavigationProps) {
       const offset = 80;
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
       setIsMobileMenuOpen(false);
     }
   };
 
   const navLinks = [
-    { label: 'About', id: 'about' },
-    { label: 'Experience', id: 'experience' },
-    { label: 'Skills', id: 'skills' },
-    { label: 'Education', id: 'education' },
-    { label: 'Contact', id: 'contact' },
+    { label: "About", id: "about" },
+    { label: "Experience", id: "experience" },
+    { label: "Skills", id: "skills" },
+    { label: "Education", id: "education" },
+    { label: "Contact", id: "contact" },
   ];
 
   return (
@@ -44,15 +44,15 @@ export function Navigation({ onDownloadCV }: NavigationProps) {
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? 'bg-surface/95 backdrop-blur-md border-b border-border shadow-sm'
-            : 'bg-transparent'
+            ? "bg-surface/95 backdrop-blur-md border-b border-border shadow-sm"
+            : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
             <button
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-accent to-accent-light text-accent-foreground font-bold text-lg hover:shadow-lg hover:scale-105 transition-all duration-200"
             >
               NUO
@@ -107,8 +107,8 @@ export function Navigation({ onDownloadCV }: NavigationProps) {
       <div
         className={`fixed inset-0 z-40 lg:hidden transition-all duration-300 ${
           isMobileMenuOpen
-            ? 'opacity-100 pointer-events-auto'
-            : 'opacity-0 pointer-events-none'
+            ? "opacity-100 pointer-events-auto"
+            : "opacity-0 pointer-events-none"
         }`}
       >
         <div
@@ -117,7 +117,9 @@ export function Navigation({ onDownloadCV }: NavigationProps) {
         />
         <div
           className={`absolute top-16 right-4 left-4 bg-surface rounded-2xl border border-border shadow-2xl p-6 transition-all duration-300 ${
-            isMobileMenuOpen ? 'translate-y-0 opacity-100' : '-translate-y-4 opacity-0'
+            isMobileMenuOpen
+              ? "translate-y-0 opacity-100"
+              : "-translate-y-4 opacity-0"
           }`}
         >
           <div className="flex flex-col gap-4">

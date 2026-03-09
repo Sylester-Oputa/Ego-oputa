@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "motion/react";
 
 export function PageLoader() {
   const [isLoading, setIsLoading] = useState(true);
@@ -38,7 +38,11 @@ export function PageLoader() {
                   key={index}
                   className="w-2 h-2 rounded-full bg-accent"
                   animate={{ scale: [1, 1.2, 1], opacity: [0.5, 1, 0.5] }}
-                  transition={{ duration: 1, repeat: Infinity, delay: index * 0.2 }}
+                  transition={{
+                    duration: 1,
+                    repeat: Infinity,
+                    delay: index * 0.2,
+                  }}
                 />
               ))}
             </div>

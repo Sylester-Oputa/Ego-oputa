@@ -1,25 +1,25 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { toast } from 'sonner';
-import { Navigation } from '@/components/Navigation';
-import { Hero } from '@/components/Hero';
-import { About } from '@/components/About';
-import { Experience } from '@/components/Experience';
-import { Skills } from '@/components/Skills';
-import { Education } from '@/components/Education';
-import { Contact } from '@/components/Contact';
-import { Footer } from '@/components/Footer';
-import { CVModal } from '@/components/CVModal';
-import { MobileContactButton } from '@/components/MobileContactButton';
-import { BackToTop } from '@/components/BackToTop';
-import { PageLoader } from '@/components/PageLoader';
+import { useState } from "react";
+import { toast } from "sonner";
+import { Navigation } from "@/components/Navigation";
+import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
+import { Experience } from "@/components/Experience";
+import { Skills } from "@/components/Skills";
+import { Education } from "@/components/Education";
+import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
+import { CVModal } from "@/components/CVModal";
+import { MobileContactButton } from "@/components/MobileContactButton";
+import { BackToTop } from "@/components/BackToTop";
+import { PageLoader } from "@/components/PageLoader";
 
 export default function Home() {
   const [isCVModalOpen, setIsCVModalOpen] = useState(false);
 
   const handleDownloadCV = () => {
-    toast.success('CV download started! Check your downloads folder.');
+    toast.success("CV download started! Check your downloads folder.");
     setIsCVModalOpen(false);
   };
 
@@ -28,12 +28,12 @@ export default function Home() {
   };
 
   const handleContact = () => {
-    const contactSection = document.getElementById('contact');
+    const contactSection = document.getElementById("contact");
     if (contactSection) {
       const offset = 80;
       const elementPosition = contactSection.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
-      window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
     }
   };
 

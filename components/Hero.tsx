@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { Download, Mail } from 'lucide-react';
-import { motion } from 'motion/react';
-import { MetricCard } from './MetricCard';
+import { Download, Mail } from "lucide-react";
+import { motion } from "motion/react";
+import { MetricCard } from "./MetricCard";
 
 interface HeroProps {
   onContact: () => void;
@@ -17,18 +17,20 @@ export function Hero({ onContact, onDownloadCV }: HeroProps) {
         <motion.div
           className="absolute top-20 right-[10%] w-96 h-96 rounded-full opacity-30 blur-3xl"
           style={{
-            background: 'radial-gradient(circle, var(--gradient-blob-1) 0%, transparent 70%)',
+            background:
+              "radial-gradient(circle, var(--gradient-blob-1) 0%, transparent 70%)",
           }}
           animate={{ x: [0, 30, 0], y: [0, -20, 0], scale: [1, 1.1, 1] }}
-          transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
+          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
           className="absolute bottom-20 left-[15%] w-80 h-80 rounded-full opacity-25 blur-3xl"
           style={{
-            background: 'radial-gradient(circle, var(--gradient-blob-2) 0%, transparent 70%)',
+            background:
+              "radial-gradient(circle, var(--gradient-blob-2) 0%, transparent 70%)",
           }}
           animate={{ x: [0, -25, 0], y: [0, 15, 0], scale: [1, 1.15, 1] }}
-          transition={{ duration: 10, repeat: Infinity, ease: 'easeInOut' }}
+          transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
       </div>
 
@@ -55,9 +57,10 @@ export function Hero({ onContact, onDownloadCV }: HeroProps) {
           </p>
 
           <p className="max-w-2xl mx-auto text-base sm:text-lg text-text-muted leading-relaxed mb-8 px-4">
-            Dedicated virtual assistant with expertise in customer support, scheduling, data management,
-            and stakeholder coordination. Proven track record of delivering exceptional service and
-            maintaining high accuracy across diverse administrative functions.
+            Dedicated virtual assistant with expertise in customer support,
+            scheduling, data management, and stakeholder coordination. Proven
+            track record of delivering exceptional service and maintaining high
+            accuracy across diverse administrative functions.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">

@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { X, Download, FileText, Briefcase, GraduationCap } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { X, Download, FileText, Briefcase, GraduationCap } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
 
 interface CVModalProps {
   isOpen: boolean;
@@ -37,7 +37,9 @@ export function CVModal({ isOpen, onClose, onDownload }: CVModalProps) {
                 </div>
                 <div>
                   <h3 className="font-semibold text-text">Curriculum Vitae</h3>
-                  <p className="text-sm text-text-muted">Nwakaego Uchenna Oputa</p>
+                  <p className="text-sm text-text-muted">
+                    Nwakaego Uchenna Oputa
+                  </p>
                 </div>
               </div>
               <button
@@ -55,8 +57,9 @@ export function CVModal({ isOpen, onClose, onDownload }: CVModalProps) {
                 <FileText className="w-12 h-12 text-accent mx-auto mb-3" />
                 <h4 className="font-semibold text-text mb-2">CV Preview</h4>
                 <p className="text-text-muted text-sm mb-4">
-                  This is a preview of the CV content. Click the button below to download the
-                  complete PDF version with full details and formatting.
+                  This is a preview of the CV content. Click the button below to
+                  download the complete PDF version with full details and
+                  formatting.
                 </p>
                 <button
                   onClick={onDownload}
@@ -71,31 +74,39 @@ export function CVModal({ isOpen, onClose, onDownload }: CVModalProps) {
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <Briefcase className="w-5 h-5 text-accent" />
-                    <h4 className="font-semibold text-text">Professional Summary</h4>
+                    <h4 className="font-semibold text-text">
+                      Professional Summary
+                    </h4>
                   </div>
                   <p className="text-text-muted text-sm leading-relaxed">
-                    Experienced Customer Service and Administrative Support Professional with a proven
-                    track record in virtual assistance, customer relations, and operational
-                    coordination. Skilled in managing complex schedules, resolving customer issues,
-                    and maintaining high standards of accuracy and efficiency across diverse
-                    industries.
+                    Experienced Customer Service and Administrative Support
+                    Professional with a proven track record in virtual
+                    assistance, customer relations, and operational
+                    coordination. Skilled in managing complex schedules,
+                    resolving customer issues, and maintaining high standards of
+                    accuracy and efficiency across diverse industries.
                   </p>
                 </div>
 
                 <div>
                   <div className="flex items-center gap-2 mb-3">
                     <GraduationCap className="w-5 h-5 text-accent" />
-                    <h4 className="font-semibold text-text">Key Qualifications</h4>
+                    <h4 className="font-semibold text-text">
+                      Key Qualifications
+                    </h4>
                   </div>
                   <ul className="space-y-2">
                     {[
-                      'Certified Virtual Assistant (ALX Africa)',
-                      'Customer Service & Management Certificate',
-                      'HND in Business Administration & Management',
-                      '5+ years of professional experience',
-                      'Remote work expertise across international clients',
+                      "Certified Virtual Assistant (ALX Africa)",
+                      "Customer Service & Management Certificate",
+                      "HND in Business Administration & Management",
+                      "5+ years of professional experience",
+                      "Remote work expertise across international clients",
                     ].map((item) => (
-                      <li key={item} className="flex items-start gap-2 text-text-muted text-sm">
+                      <li
+                        key={item}
+                        className="flex items-start gap-2 text-text-muted text-sm"
+                      >
                         <div className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
                         <span>{item}</span>
                       </li>
@@ -104,19 +115,21 @@ export function CVModal({ isOpen, onClose, onDownload }: CVModalProps) {
                 </div>
 
                 <div className="bg-surface-2 rounded-lg p-4">
-                  <h4 className="font-semibold text-text mb-3 text-sm">Core Competencies</h4>
+                  <h4 className="font-semibold text-text mb-3 text-sm">
+                    Core Competencies
+                  </h4>
                   <div className="flex flex-wrap gap-2">
                     {[
-                      'Virtual Assistance',
-                      'Customer Support',
-                      'Calendar Management',
-                      'Data Entry',
-                      'CRM Systems',
-                      'Microsoft Office',
-                      'Email Management',
-                      'Appointment Setting',
-                      'Problem Solving',
-                      'Team Collaboration',
+                      "Virtual Assistance",
+                      "Customer Support",
+                      "Calendar Management",
+                      "Data Entry",
+                      "CRM Systems",
+                      "Microsoft Office",
+                      "Email Management",
+                      "Appointment Setting",
+                      "Problem Solving",
+                      "Team Collaboration",
                     ].map((skill) => (
                       <span
                         key={skill}
