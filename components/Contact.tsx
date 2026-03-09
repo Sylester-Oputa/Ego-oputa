@@ -63,12 +63,20 @@ export function Contact() {
                   <p className="text-text-muted text-sm">Send me an email</p>
                 </div>
               </div>
-              <a
-                href="mailto:nwakaego.oputa@example.com"
-                className="text-accent hover:text-hover-accent transition-colors break-all"
-              >
-                nwakaego.oputa@example.com
-              </a>
+              <div className="flex flex-col gap-1">
+                <a
+                  href="mailto:ego.oputa@yahoo.com"
+                  className="text-accent hover:text-hover-accent transition-colors break-all text-sm"
+                >
+                  ego.oputa@yahoo.com
+                </a>
+                <a
+                  href="mailto:ego.u.oputa@gmail.com"
+                  className="text-accent hover:text-hover-accent transition-colors break-all text-sm"
+                >
+                  ego.u.oputa@gmail.com
+                </a>
+              </div>
             </div>
 
             <div className="bg-surface rounded-xl p-6 border border-border hover:border-accent/50 hover:shadow-lg transition-all duration-300">
@@ -82,10 +90,10 @@ export function Contact() {
                 </div>
               </div>
               <a
-                href="tel:+2341234567890"
+                href="tel:+2348171113661"
                 className="text-accent hover:text-hover-accent transition-colors"
               >
-                +234 123 456 7890
+                +234 817 111 3661
               </a>
             </div>
 
@@ -100,7 +108,7 @@ export function Contact() {
                 </div>
               </div>
               <a
-                href="https://wa.me/2341234567890"
+                href="https://wa.me/2348171113661"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent hover:text-hover-accent transition-colors"

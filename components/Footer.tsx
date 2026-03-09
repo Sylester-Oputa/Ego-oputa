@@ -67,11 +67,18 @@ export function Footer({ onDownloadCV }: FooterProps) {
             <h3 className="font-semibold text-text mb-4">Connect</h3>
             <div className="space-y-3 mb-4">
               <a
-                href="mailto:nwakaego.oputa@example.com"
+                href="mailto:ego.oputa@yahoo.com"
                 className="flex items-center gap-2 text-text-muted hover:text-accent transition-colors text-sm"
               >
                 <Mail className="w-4 h-4" />
-                nwakaego.oputa@example.com
+                ego.oputa@yahoo.com
+              </a>
+              <a
+                href="mailto:ego.u.oputa@gmail.com"
+                className="flex items-center gap-2 text-text-muted hover:text-accent transition-colors text-sm"
+              >
+                <Mail className="w-4 h-4" />
+                ego.u.oputa@gmail.com
               </a>
             </div>
             <button
