@@ -22,6 +22,8 @@ export function Footer({ onDownloadCV }: FooterProps) {
     { label: "Experience", id: "experience" },
     { label: "Skills", id: "skills" },
     { label: "Education", id: "education" },
+    { label: "Certificates", id: "certificates" },
+    { label: "Testimonials", id: "testimonials" },
     { label: "Contact", id: "contact" },
   ];
 
