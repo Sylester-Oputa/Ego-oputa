@@ -21,7 +21,7 @@ const certificates: Certificate[] = [
     title: 'Virtual Assistant Programme',
     issuer: 'ALX Africa',
     date: 'September 16, 2022',
-    imagePath: '/certificates/cert-alx.png',
+    imagePath: '/certificates/cert-alx.jpeg',
     category: 'Virtual Assistance',
     description:
       'Completed the ALX Virtual Assistant Programme, gaining mastery in executive support, scheduling, communication management, and remote work tools. Awarded by Fred Swaniker, Founder & CEO of the African Leadership Group, in partnership with the Mastercard Foundation.',
@@ -31,7 +31,7 @@ const certificates: Certificate[] = [
     title: 'Freelancing with Encee',
     issuer: 'Freelancing with Encee',
     date: '15 May 2025',
-    imagePath: '/certificates/cert-freelancing-encee.png',
+    imagePath: '/certificates/cert-freelancing-encee.jpeg',
     category: 'Freelancing & VA',
     description:
       '6-week intensive training completed covering Freelancing Fundamentals, Virtual Assistance, Customer Support, Social Media Management, and Canva design basics. Issued by Coach/Trainer CHINAECHEREM ORJI.',
